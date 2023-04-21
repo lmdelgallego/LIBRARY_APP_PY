@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+</head>
+<body>
+<h1>My Library</h1>
+    <ul>
+        {% for book in books %}
+            <li>
+                <h3 style="margin: 0">{{book.title}}</h3>
+                <h4 style="margin: 0">{{book.author}}</h4>
+                <span>{{book.rating}}/10</span>
+            </li>
+        {% endfor %}
+    </ul>
+    
+<a href="">Add New Book</a>
+</body>
+</html>
